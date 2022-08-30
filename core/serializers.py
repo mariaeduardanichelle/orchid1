@@ -16,3 +16,9 @@ class PersonagenSerializer(ModelSerializer):
     class Meta:
         model = Personagen
         fields = "__all__"
+
+class PersonagenDetailSerializer(ModelSerializer):
+    class Meta:
+        model = Personagen
+        fields = "__all__"
+        depth = 1
